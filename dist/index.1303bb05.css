@@ -1,0 +1,146 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overscroll-behavior-x: none;
+  background-color: #faf2e8;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+main {
+  background-image: linear-gradient(#00000080, #000), url("conservatoire.847a5358.737811a6.webp");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 60px;
+}
+
+.featured {
+  color: #faf2e8;
+  padding-top: 50vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.date {
+  margin-bottom: 20px;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.featured-artists {
+  margin-top: 40px;
+}
+
+.featured-artists, .invited-artists {
+  margin-top: 10px;
+}
+
+.invited-artists span {
+  font-style: italic;
+}
+
+section {
+  margin: 0 100px;
+}
+
+.prestation {
+  margin-bottom: 60px;
+}
+
+.composer {
+  font-weight: 600;
+  display: inline;
+}
+
+.composer span {
+  text-transform: uppercase;
+}
+
+.dates {
+  color: gray;
+  margin-left: 5px;
+  display: inline;
+}
+
+.work {
+  font-style: italic;
+}
+
+em {
+  font-style: normal;
+}
+
+.movement {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.musicians {
+  margin-top: 20px;
+}
+
+.prestation {
+  opacity: 0;
+  transition: transform 1s ease-in-out;
+  transform: translateY(100%);
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media only screen and (width <= 1300px) {
+  .featured {
+    margin: 0 40px;
+    padding-top: 50vh;
+  }
+}
+
+@media only screen and (width <= 768px) {
+  main {
+    background-image: linear-gradient(#00000080, #000), url("conservatoire-portrait.13a450be.4e092e17.webp");
+    background-size: cover;
+  }
+
+  section {
+    margin: 0 6%;
+    font-size: 16px;
+  }
+
+  .dates {
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .featured {
+    padding-top: 50vh;
+    line-height: 1.3;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+  }
+
+  .date {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .featured-artists, .invited-artists {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */

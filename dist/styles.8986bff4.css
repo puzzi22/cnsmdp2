@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Lato", sans-serif;
+	font-family: "Raleway", sans-serif;
+	line-height: 1.5;
+	background-color: rgb(250, 242, 232);
+	font-size: 1.2em;
+	overflow-x: hidden;
+	overscroll-behavior-x: none;
+}
+
+main {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+		url(/cor.abbdb9f3.jpeg);
+	background-size: cover;
+	background-position: top;
+	height: 100vh;
+	/* width: auto; */
+	/* background-attachment: fixed; */
+	/* clip-path: ellipse(100vw 30vh at 50vw 20vh); */
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.featured {
+	padding-top: 50vh;
+	color: rgb(250, 242, 232);
+}
+
+.title {
+	font-size: 2.5rem;
+	line-height: 1;
+}
+
+.date {
+	font-size: 1em;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.featured-artists {
+	margin-top: 40px;
+}
+
+.featured-artists,
+.invited-artists {
+	margin-top: 10px;
+}
+
+.invited-artists span {
+	font-style: italic;
+}
+
+section {
+	margin: 0 100px;
+}
+
+.prestation {
+	margin-bottom: 60px;
+}
+
+.composer {
+	font-weight: 600;
+	display: inline;
+}
+
+.composer span {
+	text-transform: uppercase;
+}
+
+.dates {
+	color: grey;
+	display: inline;
+	margin-left: 5px;
+}
+
+.work {
+	font-style: italic;
+}
+
+em {
+	font-style: normal;
+}
+
+.movement {
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+.musicians {
+	margin-top: 20px;
+}
+
+/* Initial state of sections */
+.prestation {
+	transform: translateY(100%);
+	transition: transform 1s ease-in-out;
+	opacity: 0;
+}
+
+/* Class to be added on scroll */
+.slide-in {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+@media only screen and (max-width: 1300px) {
+	.featured {
+		padding-top: 50vh;
+		margin: 0 40px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(/cor-portrait.481f4c5d.jpeg);
+		background-size: cover;
+	}
+
+	section {
+		margin: 0 6%;
+		font-size: 18px;
+	}
+
+	.dates {
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	.featured {
+		padding-top: 50vh;
+		line-height: 1.3;
+		margin: 0 10px;
+	}
+
+	.title {
+		font-size: 1.6em;
+		margin-bottom: 10px;
+	}
+
+	.subtitle {
+		margin-bottom: 10px;
+	}
+
+	.date {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+
+	.featured-artists,
+	.invited-artists {
+		font-size: 16px;
+	}
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
